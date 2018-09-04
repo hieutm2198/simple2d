@@ -140,7 +140,7 @@ void update() {
     img_png->x = window->mouse.x;
     img_png->y = window->mouse.y;
 
-    GLfloat angle = (GLfloat)SDL_GetTicks() / 10.0;
+    GLfloat angle = (GLfloat)window->frames;
 
     S2D_RotateImage(img_png,   angle, S2D_CENTER);
     S2D_RotateImage(img_jpg,   angle, S2D_TOP_LEFT);
